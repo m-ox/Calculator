@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+  font-family: LiquidCrystal;
+  src: url('../font/LiquidCrystal/liquidcr.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#tag {
+  color: rgb(81, 77, 77);
+  margin-top: -5px;
+  padding: 5px;
+}
+
+.calcInterface {
+  padding: 20px 10px;
+  width: 450px;
+  height: 580px;
+  background: rgb(177, 177, 177);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: inset -3px -7px 10px 0 #675f5f;
+}
+
+.calcInterface .input {
+  font-family: LiquidCrystal, sans-serif;
+  width: 80%;
+  height: 70px;
+  padding: 5px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgb(127, 145, 114);
+  font-size: 4em;
+  box-shadow: inset 3px 4px 5px 0 black;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 12px;
+  place-items: center;
+}
+
+.button-wrapper {
+  background: #8e8a8a;
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  font-size: 4em;
+  color: rgb(47, 46, 46);
+  margin: 15px;
+  border: 2px solid #908c8c;
+  place-content: center;
+  padding: 0 10px;
+  border-radius: 10px;
+  transition: .2s;
+  box-shadow: 3px 5px 4px 2px #595555;
+}
+
+.button-wrapper:hover {
+  cursor: pointer;
+  background: #a09797;
+}
+
+.buttons {
+  margin-top: 30px;
+  justify-self: center;
+  align-items: center;
+  width: 90%;
+}
+
+.operator {
+  background: rgb(125, 81, 104);
+  border: 2px solid rgb(140, 98, 120);
+  color: rgb(218, 209, 209);
+}
+
+.clearing {
+  width: 90%;
+  font-size: 12px;
+  display: flex;
+}
